@@ -1,9 +1,11 @@
-#include <Arduino.h>
-
+#include"./blinkLed/blinkLed.h"//include blinkLed class.
 void setup() {
-  // put your setup code here, to run once:
+  blinkLed myBlinkLedObj;
+  myBlinkLedObj.setupPinOutputMode();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  blinkLed myBlinkLedObj;
+  myBlinkLedObj.toggleLed();
 }
