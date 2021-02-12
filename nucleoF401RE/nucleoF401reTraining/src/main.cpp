@@ -1,11 +1,12 @@
-#include"./blinkLed/blinkLed.h"//include blinkLed class.
+// #include"./blinkLed/blinkLed.h"//include blinkLed class.
+#include "./blinkMultipleLed/blinkMultipleLed.h";
 void setup() {
-  blinkLed myBlinkLedObj;
-  myBlinkLedObj.setupPinOutputMode();
+  blinkMultipleLed blinkLeds;
+  blinkLeds.setupLedOutput();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  blinkLed myBlinkLedObj;
-  myBlinkLedObj.toggleLed();
+  blinkMultipleLed blinkLeds;
+  blinkLeds.toggleMultipleLed();
 }
